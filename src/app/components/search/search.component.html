@@ -1,0 +1,12 @@
+<h1>Need Music?</h1>
+<p class="lead"> Use the ngSpotify app to browse new releases and find your favourite songs. All you Need to get is this text and a mostly barebones HTML document.</p>
+
+<form>
+    <div class="form-group">
+        <!--ngModel needs to go in brackets and paranthesis, it will be given a property called searchStr. -->
+         <!--we want to give this an ngModel; it's going to have a property and we're gonnga call it searchStr.-->
+         <!--In Angular2 we need to add a name attribute with the same value as ngModel. ie)name="SearchStr". -->
+         <!--We also need a key up event and  were going to set that to a function called Search Music.-->
+        <input class="form-control" type="text" placeholder="Search Artists..." [(ngModel)]="searchStr" name="searchStr" (keyup)="searchMusic()">
+    </div>
+</form>
